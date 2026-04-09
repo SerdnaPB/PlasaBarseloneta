@@ -55,10 +55,10 @@
         transform: translateX(-50%);
         display: none;
         width: min(720px, 92vw);
-        padding: 14px 16px;
+        padding: 18px 18px;
         text-align: center;
-        font-size: clamp(16px, 3.8vw, 22px);
-        font-weight: 800;
+        font-size: clamp(26px, 6vw, 44px);
+        font-weight: 900;
         color: #f5f3ff;
         background: rgba(124, 58, 237, 0.22);
         border: 1px solid rgba(196, 181, 253, 0.35);
@@ -75,7 +75,7 @@
     </style>
   </head>
   <body>
-    <div id="msg" class="top-message">Todo va a salir bien 💜</div>
+    <div id="msg" class="top-message">Todo va a salir bien 💜🧸</div>
     <div class="wrap">
       <button id="btn">Abrasito de Andrés ⭐</button>
       <img id="flork" src="./flork.png" alt="Flork" />
@@ -89,10 +89,11 @@
       btn.addEventListener("click", () => {
         msg.style.display = "block";
         img.style.display = "block";
+        btn.style.display = "none";
         img.scrollIntoView({ behavior: "smooth", block: "center" });
       });
     </script>
   </body>
 </html>
-</html>
+
 
